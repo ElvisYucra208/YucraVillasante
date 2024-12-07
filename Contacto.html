@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frutería "Frutica"</title>
-    <style>
-        body {
+<html><head>
+  <title>Contacto</title>
+  <style>
+   body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             margin: 0;
@@ -35,10 +31,12 @@
             transition: transform 0.3s ease, background-color 0.3s ease;
             display: inline-block;
         }
+
         .menu a:hover {
             background-color: #3498db;
             transform: scale(1.1);
         }
+
         .menu li ul {
             display: none;
             position: absolute;
@@ -52,12 +50,15 @@
             list-style: none;
             z-index: 1000;
         }
+
         .menu li:hover > ul {
             display: block;
         }
+
         .menu li ul li {
             display: block;
         }
+
         .menu li ul li a {
             padding: 10px;
             font-size: 16px;
@@ -65,6 +66,7 @@
             color: #fff;
             border-radius: 0;
         }
+
         .menu li ul li a:hover {
             background-color: #3498db;
             transform: none;
@@ -72,32 +74,33 @@
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="menu">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#services">Servicios</a>
-                <ul>
-                    <li><a href="file:///C:/Users/ELVIS/Documents/Ept%20gabo/Envios%20a%20domicilio.html">Envios a Domicilio</a></li>
-                    <li><a href="file:///C:/Users/ELVIS/Documents/Ept%20gabo/Ubicaciondetiendas.html">Ubicación de Tiendas</a></li>
-                </ul>
-                </li>
-                <li><a href="#about">Acerca de</a>
-                <ul>
-                    <li><a href="file:///C:/Users/ELVIS/Documents/Ept%20gabo/Nuestra%20Meta%20y%20Proposito.html">Nuestro Meta y Propósito</a></li>
-                </ul>
-                </li>
-                <li>
-                    <a href="#portafolio">Portafolio</a>
-                    <ul>
-                        <li><a href="file:///C:/Users/ELVIS/Documents/Ept%20gabo/Frutas%20Recomendadas.html">Frutas Recomendadas</a></li>
-                        <li><a href="file:///C:/Users/ELVIS/Documents/Ept%20gabo/Frutas%20Populares.html">Frutas Populares</a></li>
-                    </ul>
-                </li>
-                <li><a href="file:///C:/Users/ELVIS/Documents/Ept%20gabo/Contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <center><img src="Fruteria Frutica.png" width="1440" height="719"></center>
-    </body>
+    <h1>Compra de Frutas</h1>
+    <form>
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" id="nombre" name="nombre" required=""><br><br>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required=""><br><br>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required=""><br><br>
+
+        <label for="fecha">Fecha de Reservación:</label>
+        <input type="date" id="fecha" name="fecha" required=""><br><br>
+
+        <label for="hora">Hora de Reservación:</label>
+        <input type="time" id="hora" name="hora" required=""><br><br>
+
+        <label for="tipoPlanta">Fruta Disponible:</label>
+        <select id="tipoPlanta" name="tipoPlanta" required=""><br><br>
+            <option value="flor">Arandanos</option>
+            <option value="arbusto">Fresa</option>
+            <option value="árbol">Mandarina</option>
+            <option value="suculenta">Toronja</option>
+        </select>
+
+        <button type="submit">Pedir</button>
+    </form>
+    <center><a href="file:///C:/Users/ELVIS/Documents/Ept%20gabo/index.html">Volver al inicio</a></center>
+</body>
 </html>
